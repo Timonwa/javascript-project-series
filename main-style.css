@@ -108,6 +108,9 @@ nav {
   font-weight: 500;
   background-color: #fff;
   transition: right 300ms;
+  min-height: 300px;
+  width: 150px;
+  text-align: center;
 }
 .nav-links > li {
   margin: 10px 0;
