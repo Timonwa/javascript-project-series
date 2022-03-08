@@ -1,0 +1,73 @@
+/* ! project styles */
+.accordion-examples__heading {
+  text-align: center;
+}
+/* accordion wrappers */
+.accordion1-wrapper,
+.accordion2-wrapper,
+.accordion3-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* accordion card */
+.accordion1-card,
+.accordion2-card,
+.accordion3-card {
+  width: 280px;
+  border: double goldenrod;
+  background-color: white;
+}
+
+/* accordion title */
+summary {
+  font-weight: bold;
+}
+.accordion1-card__title,
+.accordion2-card__title,
+.accordion3-card__title {
+  color: #202020;
+  position: relative;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+/* icons */
+.icons {
+  position: absolute;
+  right: 10px;
+  color: goldenrod;
+  transform: rotate(0deg);
+  transition: transform 300ms, color 300ms;
+}
+/* close btn */
+.close {
+  display: none;
+}
+
+/* accordion body */
+.accordion1-card__body {
+  border-top: solid 1px goldenrod;
+  padding: 10px;
+  color: #3d3b3b;
+}
+
+.accordion2-card__body,
+.accordion3-card__body {
+  border-top: solid 1px goldenrod;
+  padding: 10px;
+  color: #3d3b3b;
+  display: none;
+}
+
+/* javascript css classes to be added and removed */
+.toggleIcon {
+  transform: rotate(45deg);
+  color: red;
+}
+
+.active {
+  display: inline-block;
+}

@@ -89,8 +89,20 @@ nav {
   align-items: center;
 }
 /* logo */
-.logo > h3 a {
+.logo > p a {
   color: #301f1f;
+  font-weight: bold;
+}
+/* page title */
+.page-title {
+  width: 100%;
+  text-align: center;
+}
+h1 {
+  border-bottom: #07ad4c 2px solid;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* nav bar link to the list of all the projects on the home page */
 .menu {
@@ -101,7 +113,6 @@ nav {
 .nav-links {
   list-style-type: none;
   position: absolute;
-  right: 0;
   top: 60px;
   right: -100%;
   padding: 10px;
@@ -119,10 +130,14 @@ nav {
   color: #301f1f;
 }
 header {
-  height: 250px;
   width: 100%;
-  border: 1px solid #000;
   margin: 20px 0;
+}
+header img {
+  border: 1px solid #000;
+  min-height: 250px;
+  max-height: 250px;
+  width: 100%;
 }
 main section {
   margin-bottom: 40px;

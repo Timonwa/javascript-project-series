@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--* The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!--* Title -->
+    <title>Accordions | 10+ Vanilla Javascript Projects by Timonwa.</title>
+
+    <!-- * SEO Meta Tags -->
+    <!-- Primary Meta Tags -->
+    <meta
+      name="title"
+      content="Accordions | 10+ Vanilla Javascript Projects by Timonwa."
+    />
+    <meta
+      name="description"
+      content="A collection of javascript projects from the javascript project series written on Timonwa's Notes Blog.'"
+    />
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://link.com" />
+    <meta
+      property="og:title"
+      content="Accordions | 10+ Vanilla Javascript Projects by Timonwa."
+    />
+    <meta
+      property="og:description"
+      content="A collection of javascript projects from the javascript project series written on Timonwa's Notes Blog.'"
+    />
+    <meta property="og:image" content="https://link.com/assets/seo-image.png" />
+    <!-- Twitter Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://link.com" />
+    <meta
+      property="twitter:title"
+      content="Accordions | 10+ Vanilla Javascript Projects by Timonwa."
+    />
+    <meta
+      property="twitter:description"
+      content="A collection of javascript projects from the javascript project series written on Timonwa's Notes Blog.'"
+    />
+    <meta
+      property="twitter:image"
+      content="https://link.com/assets/seo-image.png"
+    />
+
+    <!--* Icons -->
+    <!-- Google Icons -->
+    <!-- Online -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+    />
+
+    <!--* CSS -->
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../main-style.css" />
+    <!-- Accordion CSS styles -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!--* container/body wrapper for every content in the body -->
+    <div class="flex">
+      <!--* nav bar -->
+      <nav>
+        <div class="nav-cntr">
+          <!-- logo -->
+          <div class="logo">
+            <p><a href="/">HOME</a></p>
+          </div>
+
+          <!-- nav toggle -->
+          <div class="menu">
+            <p>Projects</p>
+          </div>
+
+          <!-- nav links -->
+          <ul class="nav-links">
+            <li><a href="/01-accordion/index.html">Accordions</a></li>
+            <li><a href="">Project</a></li>
+            <li><a href="">Project</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="nav-space"></div>
+
+      <!--* banner -->
+      <header>
+        <div class="page-title">
+          <h1>Accordions</h1>
+        </div>
+      </header>
+
+      <!--* body -->
+      <main>
+        <!--* first accordion example -->
+        <section class="accordion-examples">
+          <h2 class="accordion-examples__heading">Accordion 1</h2>
+
+          <div class="accordion1-wrapper">
+            <!-- first accordion -->
+            <details class="accordion1-card">
+              <summary class="accordion1-card__title">Topic 1</summary>
+              <p class="accordion1-card__body"
+                >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+                neque, velit quasi quos quia nulla omnis! Similique dolorum,
+                veniam facilis aliquam est fuga aperiam voluptatibus, sapiente
+                atque vitae quia accusamus.</p
+              >
+            </details>
+
+            <!-- second accordion -->
+            <details class="accordion1-card">
+              <summary class="accordion1-card__title">Topic 2</summary>
+              <p class="accordion1-card__body"
+                >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+                neque, velit quasi quos quia nulla omnis! Similique dolorum,
+                veniam facilis aliquam est fuga aperiam voluptatibus, sapiente
+                atque vitae quia accusamus.</p
+              >
+            </details>
+
+            <!-- third accordion -->
+            <details class="accordion1-card">
+              <summary class="accordion1-card__title">Topic 3</summary>
+              <p class="accordion1-card__body"
+                >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+                neque, velit quasi quos quia nulla omnis! Similique dolorum,
+                veniam facilis aliquam est fuga aperiam voluptatibus, sapiente
+                atque vitae quia accusamus.</p
+              >
+            </details>
+          </div>
+        </section>
+
+        <!--* second accordion example -->
+        <section class="accordion-examples">
+          <h2 class="accordion-examples__heading">Accordion 2</h2>
+
+          <div class="accordion2-wrapper">
+            <!-- first accordion -->
+            <div class="accordion2-card">
+              <h3 class="accordion2-card__title"
+                >Topic 1
+                <span class="icons open material-icons-outlined">
+                  add_circle_outline
+                </span>
+                <span class="icons close material-icons-outlined">
+                  cancel
+                </span></h3
+              >
+              <p class="accordion2-card__body first"
+                >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+                neque, velit quasi quos quia nulla omnis! Similique dolorum,
+                veniam facilis aliquam est fuga aperiam voluptatibus, sapiente
+                atque vitae quia accusamus.</p
+              >
+            </div>
+
+            <!-- second accordion -->
+            <div class="accordion2-card">
+              <h3 class="accordion2-card__title"
+                >Topic 2
+                <span class="icons open material-icons-outlined">
+                  add_circle_outline
+                </span>
+                <span class="icons close material-icons-outlined">
+                  cancel
+                </span></h3
+              >
+              <p class="accordion2-card__body"
+                >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+                neque, velit quasi quos quia nulla omnis! Similique dolorum,
+                veniam facilis aliquam est fuga aperiam voluptatibus, sapiente
+                atque vitae quia accusamus.</p
+              >
+            </div>
+
+            <!-- third accordion -->
+            <div class="accordion2-card">
+              <h3 class="accordion2-card__title"
+                >Topic 3
+                <span class="icons open material-icons-outlined">
+                  add_circle_outline
+                </span>
+                <span class="icons close material-icons-outlined">
+                  cancel
+                </span>
+              </h3>
+              <p class="accordion2-card__body"
+                >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+                neque, velit quasi quos quia nulla omnis! Similique dolorum,
+                veniam facilis aliquam est fuga aperiam voluptatibus, sapiente
+                atque vitae quia accusamus.</p
+              >
+            </div>
+          </div>
+        </section>
+
+        <!--* third accordion example -->
+        <section class="accordion-examples">
+          <h2 class="accordion-examples__heading">Accordion 3</h2>
+
+          <div class="accordion3-wrapper">
+            <!-- first accordion -->
+            <div class="accordion3-card">
+              <h3 class="accordion3-card__title"
+                >Topic 1
+                <span class="icons open material-icons-outlined">
+                  add_circle_outline
+                </span>
+                <span class="icons close material-icons-outlined">
+                  cancel
+                </span></h3
+              >
+              <p class="accordion3-card__body"
+                >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+                neque, velit quasi quos quia nulla omnis! Similique dolorum,
+                veniam facilis aliquam est fuga aperiam voluptatibus, sapiente
+                atque vitae quia accusamus.</p
+              >
+            </div>
+
+            <!-- second accordion -->
+            <div class="accordion3-card">
+              <h3 class="accordion3-card__title"
+                >Topic 2
+                <span class="icons open material-icons-outlined">
+                  add_circle_outline
+                </span>
+                <span class="icons close material-icons-outlined">
+                  cancel
+                </span></h3
+              >
+              <p class="accordion3-card__body"
+                >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+                neque, velit quasi quos quia nulla omnis! Similique dolorum,
+                veniam facilis aliquam est fuga aperiam voluptatibus, sapiente
+                atque vitae quia accusamus.</p
+              >
+            </div>
+
+            <!-- third accordion -->
+            <div class="accordion3-card">
+              <h3 class="accordion3-card__title"
+                >Topic 3
+                <span class="icons open material-icons-outlined">
+                  add_circle_outline
+                </span>
+                <span class="icons close material-icons-outlined">
+                  cancel
+                </span></h3
+              >
+              <p class="accordion3-card__body"
+                >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+                neque, velit quasi quos quia nulla omnis! Similique dolorum,
+                veniam facilis aliquam est fuga aperiam voluptatibus, sapiente
+                atque vitae quia accusamus.</p
+              >
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="wrapper">
+          <p class="attribution">
+            Created by <a href="https://github.com/timonwa">Timonwa</a> for
+            <a href="https://blog.timonwa.com">Timonwa's Blogs.</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!--* JavaScripts -->
+    <!-- Main script -->
+    <script src="../main-script.js"></script>
+    <!-- Accordion script -->
+    <script src="../01-accordion/script.js"></script>
+  </body>
+</html>
