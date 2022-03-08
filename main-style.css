@@ -1,3 +1,4 @@
+/*! css reset */
 *,
 *:before,
 *:after {
@@ -25,6 +26,12 @@ h5 {
 h6 {
   margin-bottom: 0.3rem;
 }
+ol {
+  margin-left: 30px;
+}
+/* ! */
+
+/*! main css */
 /** body wrapper */
 body {
   background-color: #babfffad;
@@ -44,7 +51,7 @@ body {
 }
 @media screen and (max-width: 500px) {
   body {
-    padding: 0 40px;
+    padding: 0 20px;
   }
 }
 
@@ -74,12 +81,27 @@ nav {
   color: #301f1f;
   height: 60px;
   width: 100%;
-  padding: 20px;
+  padding: 20px 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-bottom: solid 2px #808080;
+}
+@media screen and (max-width: 900px) {
+  nav {
+    padding: 20px 80px;
+  }
+}
+@media screen and (max-width: 780px) {
+  nav {
+    padding: 20px 60px;
+  }
+}
+@media screen and (max-width: 500px) {
+  nav {
+    padding: 20px;
+  }
 }
 /* nav bar wrapper */
 .nav-cntr {
@@ -92,17 +114,6 @@ nav {
 .logo > p a {
   color: #301f1f;
   font-weight: bold;
-}
-/* page title */
-.page-title {
-  width: 100%;
-  text-align: center;
-}
-h1 {
-  border-bottom: #07ad4c 2px solid;
-  width: max-content;
-  margin-left: auto;
-  margin-right: auto;
 }
 /* nav bar link to the list of all the projects on the home page */
 .menu {
@@ -120,8 +131,11 @@ h1 {
   background-color: #fff;
   transition: right 300ms;
   min-height: 300px;
-  width: 150px;
+  width: 200px;
   text-align: center;
+}
+.nav-links-active {
+  right: 0;
 }
 .nav-links > li {
   margin: 10px 0;
@@ -129,15 +143,33 @@ h1 {
 .nav-links > li > a {
   color: #301f1f;
 }
+.nav-links > li.active-link > a {
+  font-weight: bold;
+}
+
+/** header */
 header {
   width: 100%;
   margin: 20px 0;
+  text-align: center;
 }
 header img {
-  border: 1px solid #000;
-  min-height: 250px;
-  max-height: 250px;
-  width: 100%;
+  border-radius: 10px;
+  max-height: 300px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 500px) {
+  header img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+/** main */
+.description h2 {
+  font-weight: normal;
 }
 main section {
   margin-bottom: 40px;
@@ -150,6 +182,4 @@ footer {
   padding: 20px;
   text-align: center;
 }
-.active {
-  right: 0;
-}
+/* ! */
