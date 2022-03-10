@@ -74,7 +74,7 @@ nav * {
 }
 nav {
   background-color: #fff;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -86,6 +86,7 @@ nav {
   justify-content: center;
   align-items: center;
   border-bottom: solid 2px #808080;
+  z-index: 1;
 }
 @media screen and (max-width: 900px) {
   nav {
@@ -108,7 +109,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
 }
 /* logo */
 .logo > p a {
@@ -124,8 +124,8 @@ nav {
 .nav-links {
   list-style-type: none;
   position: absolute;
-  top: 40px;
-  right: -220px;
+  top: 60px;
+  right: -100%;
   padding: 10px;
   font-weight: 500;
   background-color: #fff;
@@ -135,7 +135,7 @@ nav {
   text-align: center;
 }
 .nav-links-active {
-  right: -20px;
+  right: 0;
 }
 .nav-links > li {
   margin: 10px 0;
