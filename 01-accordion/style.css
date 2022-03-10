@@ -65,7 +65,7 @@ summary {
 /* javascript css classes to be added and removed */
 .toggleIcon {
   transform: rotate(45deg);
-  color: red;
+  color: hsl(0, 70%, 50%);
 }
 
 .active {
