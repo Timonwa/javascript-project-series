@@ -71,3 +71,9 @@ summary {
 .active {
   display: inline-block;
 }
+
+:where(.nav-links > li > a, .nav-links > li > a:link, .nav-links
+    > li
+    > a:hover, .nav-links > li > a:active, .nav-links > li > a:visited) {
+  color: #301f1f;
+}

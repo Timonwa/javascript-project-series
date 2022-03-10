@@ -56,9 +56,13 @@ body {
 }
 
 /** all links */
-a {
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {
   text-decoration: none;
-  color: #0000ff;
+  color: #3b3bb9;
   padding: 0 5px;
 }
 a:hover {
@@ -140,7 +144,11 @@ nav {
 .nav-links > li {
   margin: 10px 0;
 }
-.nav-links > li > a {
+.nav-links > li > a,
+.nav-links > li > a:link,
+.nav-links > li > a:hover,
+.nav-links > li > a:active,
+.nav-links > li > a:visited {
   color: #301f1f;
 }
 .nav-links > li.active-link > a {
