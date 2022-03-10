@@ -88,7 +88,6 @@ nav {
   justify-content: center;
   align-items: center;
   border-bottom: solid 2px #808080;
-  overflow-x: hidden;
 }
 @media screen and (max-width: 900px) {
   nav {
@@ -111,6 +110,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  overflow-x: hidden;
 }
 /* logo */
 .logo > p a {
@@ -126,8 +127,8 @@ nav {
 .nav-links {
   list-style-type: none;
   position: absolute;
-  top: 60px;
-  right: -100%;
+  top: 40px;
+  right: -220px;
   padding: 10px;
   font-weight: 500;
   background-color: #fff;
@@ -137,7 +138,7 @@ nav {
   text-align: center;
 }
 .nav-links-active {
-  right: 0;
+  right: -20px;
 }
 .nav-links > li {
   margin: 10px 0;
