@@ -37,6 +37,7 @@ body {
   background-color: #babfffad;
   color: #302a2a;
   padding: 0 100px;
+  position: relative;
   overflow-x: hidden;
 }
 @media screen and (max-width: 900px) {
@@ -87,6 +88,7 @@ nav {
   justify-content: center;
   align-items: center;
   border-bottom: solid 2px #808080;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 900px) {
   nav {
@@ -160,7 +162,7 @@ header img {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   header img {
     height: auto;
     width: 100%;
