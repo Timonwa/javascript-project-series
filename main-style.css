@@ -38,6 +38,7 @@ body {
   color: #302a2a;
   padding: 0 100px;
   overflow-x: hidden;
+  min-height: calc(100vh - 60px);
 }
 @media screen and (max-width: 900px) {
   body {
@@ -123,6 +124,7 @@ nav {
   font-weight: bold;
   color: #07ad4c;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .nav-links {
   list-style-type: none;
@@ -145,6 +147,7 @@ nav {
 }
 .nav-links > li > a {
   color: #301f1f;
+  margin-bottom: 20px;
 }
 .nav-links > li.active-link > a {
   font-weight: bold;
