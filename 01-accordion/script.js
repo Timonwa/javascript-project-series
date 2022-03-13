@@ -1,7 +1,7 @@
 // * Function for accordion 2
 // variables
 const accordion2BtnToggle = document.querySelectorAll(
-  ".accordion2-card__title"
+  ".accordion2-card__header"
 );
 
 // adding event listener to the accordion2 toggle button
@@ -18,7 +18,7 @@ function accordion2ToggleFunction() {
 // * Function for accordion 3
 // variables
 const accordion3BtnToggle = document.querySelectorAll(
-  ".accordion3-card__title"
+  ".accordion3-card__header"
 );
 
 // adding event listener to the accordion3 toggle button
@@ -34,6 +34,6 @@ function accordion3ToggleFunction() {
   }
   if (this.nextElementSibling.style.display == "none") {
     this.nextElementSibling.style.display = "block";
-    this.children[0].classList.toggle("toggleIcon");
+    this.children[0].classList.add("toggleIcon");
   }
 }

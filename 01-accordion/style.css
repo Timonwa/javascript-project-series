@@ -21,13 +21,13 @@
   background-color: white;
 }
 
-/* accordion title */
+/* accordion header */
 summary {
   font-weight: bold;
 }
-.accordion1-card__title,
-.accordion2-card__title,
-.accordion3-card__title {
+.accordion1-card__header,
+.accordion2-card__header,
+.accordion3-card__header {
   color: #202020;
   position: relative;
   padding: 10px;
@@ -41,10 +41,6 @@ summary {
   color: goldenrod;
   transform: rotate(0deg);
   transition: transform 300ms, color 300ms;
-}
-/* close btn */
-.close {
-  display: none;
 }
 
 /* accordion body */
@@ -70,10 +66,4 @@ summary {
 
 .active {
   display: inline-block;
-}
-
-:where(.nav-links > li > a, .nav-links > li > a:link, .nav-links
-    > li
-    > a:hover, .nav-links > li > a:active, .nav-links > li > a:visited) {
-  color: #301f1f;
 }

@@ -63,7 +63,6 @@ a:active,
 a:visited {
   text-decoration: none;
   color: #3b3bb9;
-  padding: 0 5px;
 }
 a:hover {
   text-decoration: underline;
@@ -144,11 +143,7 @@ nav {
 .nav-links > li {
   margin: 10px 0;
 }
-.nav-links > li > a,
-.nav-links > li > a:link,
-.nav-links > li > a:hover,
-.nav-links > li > a:active,
-.nav-links > li > a:visited {
+.nav-links > li > a {
   color: #301f1f;
 }
 .nav-links > li.active-link > a {
