@@ -20,7 +20,12 @@ The following is the list of javascript projects included in the repository.
 You can click on them to go straight to that section.
 
 1. [Accordions](#accordions)
+2. [Color Flipper](#color-flipper)
 
 ### Accordions
 
 You can view the [demo here](https://javascript-project-series.vercel.app/01-accordion/index.html), read the [article here](https://blog.timonwa.com/3-simple-ways-to-build-an-accordion), and view the [code here](https://github.com/Timonwa/javascript-project-series/tree/main/01-accordion).
+
+### Color Flipper
+
+You can view the [demo here](https://javascript-project-series.vercel.app/02-color-flipper/index.html), read the [article here](https://blog.timonwa.com), and view the [code here](https://github.com/Timonwa/javascript-project-series/tree/main/02-color-flipper).

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--* The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!--* Title -->
+    <title>Color Flipper | 10+ Vanilla Javascript Projects by Timonwa.</title>
+
+    <!-- * SEO Meta Tags -->
+    <!-- Primary Meta Tags -->
+    <meta
+      name="title"
+      content="Color Flipper | 10+ Vanilla Javascript Projects by Timonwa."
+    />
+    <meta
+      name="description"
+      content="A collection of javascript projects from the javascript project series written on Timonwa's Notes Blog.'"
+    />
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://javascript-project-series.vercel.app"
+    />
+    <meta
+      property="og:title"
+      content="Color Flipper | 10+ Vanilla Javascript Projects by Timonwa."
+    />
+    <meta
+      property="og:description"
+      content="A collection of javascript projects from the javascript project series written on Timonwa's Notes Blog.'"
+    />
+    <meta
+      property="og:image"
+      content="https://javascript-project-series.vercel.app/assets/seo-image.png"
+    />
+    <!-- Twitter Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://javascript-project-series.vercel.app"
+    />
+    <meta
+      property="twitter:title"
+      content="Color Flipper | 10+ Vanilla Javascript Projects by Timonwa."
+    />
+    <meta
+      property="twitter:description"
+      content="A collection of javascript projects from the javascript project series written on Timonwa's Notes Blog.'"
+    />
+    <meta
+      property="twitter:image"
+      content="https://javascript-project-series.vercel.app/assets/seo-image.png"
+    />
+
+    <!--* Icons -->
+    <!-- Google Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+    />
+
+    <!--* CSS -->
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../main-style.css" />
+    <!-- Accordion CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!--* container/body wrapper for every content in the body -->
+    <div class="flex">
+      <!--* nav bar -->
+      <nav>
+        <div class="nav-cntr">
+          <!-- logo -->
+          <div class="logo">
+            <p><a href="/">HOME</a></p>
+          </div>
+
+          <!-- nav toggle -->
+          <div class="menu">
+            <p>Projects</p>
+          </div>
+
+          <!-- nav links -->
+          <ul class="nav-links">
+            <li>
+              <a href="../01-accordion/index.html">Accordions</a>
+            </li>
+            <li class="active-link">
+              <a href="../02-color-flipper/index.html">Color Flipper</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="nav-space"></div>
+
+      <!--* banner -->
+      <header>
+        <div class="page-header">
+          <h1>Color Flipper</h1>
+
+          <div class="page-links">
+            <span id="hex-page">HEX</span>
+            <span id="rgb-page">RGB</span>
+            <span id="hsl-page">HSL</span>
+          </div>
+        </div>
+      </header>
+
+      <!--* body -->
+      <main>
+        <div class="main-wrapper" id="hex-wrapper">
+          <p>Change the background color by clicking this button.</p>
+          <button id="hex-color">#babfff</button>
+        </div>
+
+        <div class="main-wrapper" id="rgb-wrapper">
+          <p>Change the background color by clicking this button.</p>
+          <button id="rgb-color">rgb(120, 191, 255)</button>
+        </div>
+
+        <div class="main-wrapper" id="hsl-wrapper">
+          <p>Change the background color by clicking this button.</p>
+          <button id="hsl-color">hsl(26, 100%, 86%)</button>
+        </div>
+      </main>
+
+      <footer>
+        <div class="wrapper">
+          <p class="attribution">
+            Created by <a href="https://github.com/timonwa" target="_blank">Timonwa</a> for
+            <a href="https://blog.timonwa.com" target="_blank">Timonwa's Blogs.</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!--* JavaScripts -->
+    <!-- Main script -->
+    <script src="../main-script.js"></script>
+    <!-- Accordion script -->
+    <script src="./script.js"></script>
+  </body>
+</html>
