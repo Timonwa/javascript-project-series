@@ -77,7 +77,7 @@ hexColor.addEventListener("click", function () {
     randomNumberValue = Math.floor(Math.random() * hex.length);
     hexColorValue += hex[randomNumberValue];
   }
-  // outputs in numbers inside the button
+  // changes the text inside the button
   hexColor.textContent = hexColorValue;
   // changes the background color
   changeBackground.style.background = hexColorValue;
@@ -85,16 +85,16 @@ hexColor.addEventListener("click", function () {
 
 // rgb button
 rgbColor.addEventListener("click", function () {
-  // randomly picks a number between 0 and 256
+  // randomly picks a number between 0 and 255
   let a = Math.floor(Math.random() * 256);
-  // randomly picks a number between 0 and 256
+  // randomly picks a number between 0 and 255
   let b = Math.floor(Math.random() * 256);
-  // randomly picks a number between 0 and 256
+  // randomly picks a number between 0 and 255
   let c = Math.floor(Math.random() * 256);
   // saves the new background color
   // const rgbColorValue = "rgb(" + a + ", " + b + ", " + c + ")";
   const rgbColorValue = `rgb(${a}, ${b}, ${c})`;
-  // outputs in numbers inside the button
+  // changes the text inside the button
   rgbColor.textContent = rgbColorValue;
   // changes the background color
   changeBackground.style.background = rgbColorValue;
@@ -102,12 +102,12 @@ rgbColor.addEventListener("click", function () {
 
 // hsl button
 hslColor.addEventListener("click", function () {
-  // randomly picks a number between 0 and 238
-  let a = Math.floor(Math.random() * 238);
+  // randomly picks a number between 0 and 360
+  let a = Math.floor(Math.random() * 361);
   // randomly picks a number between 0 and 100
-  let b = Math.floor(Math.random() * 100);
+  let b = Math.floor(Math.random() * 101);
   // randomly picks a number between 0 and 100
-  let c = Math.floor(Math.random() * 100);
+  let c = Math.floor(Math.random() * 101);
   // saves the new background color
   // const hslColorValue = "hsl(" + a + ", " + b + "%, " + c + "%)";
   const hslColorValue = `hsl(${a}, ${b}%, ${c}%)`;
