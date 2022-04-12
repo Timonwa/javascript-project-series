@@ -7,8 +7,8 @@ h3 {
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.2);
   position: relative;
-  margin: 40px auto;
   max-width: 700px;
+  margin: 40px auto;
 }
 /* image */
 #image {
