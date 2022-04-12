@@ -1,0 +1,42 @@
+/* heading */
+h3 {
+  text-align: center;
+}
+
+.slider {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: relative;
+  margin: 40px auto;
+  max-width: 700px;
+}
+/* image */
+#image {
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+  max-height: 450px;
+  padding: 10px;
+  margin: 0 auto;
+}
+/* count and number of the images */
+p {
+  text-align: center;
+}
+/* prev and next btns */
+.btn {
+  position: absolute;
+  top: 50%;
+  font-size: 80%;
+  background-color: rgb(228, 231, 231);
+  border: solid 1px rgb(201, 199, 199);
+  padding: 5px;
+}
+/* prev btn */
+#backward {
+  left: 0px;
+}
+/* next btn */
+#forward {
+  right: 0px;
+}

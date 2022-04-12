@@ -21,6 +21,7 @@ You can click on them to go straight to that section.
 
 1. [Accordions](#accordions)
 2. [Color Flipper](#color-flipper)
+3. [Image Slider](#image-slider)
 
 ### Accordions
 
@@ -28,4 +29,8 @@ You can view the [demo here](https://javascript-project-series.vercel.app/01-acc
 
 ### Color Flipper
 
-You can view the [demo here](https://javascript-project-series.vercel.app/02-color-flipper/index.html), read the [article here](https://blog.timonwa.com), and view the [code here](https://github.com/Timonwa/javascript-project-series/tree/main/02-color-flipper).
+You can view the [demo here](https://javascript-project-series.vercel.app/02-color-flipper/index.html), read the [article here](https://blog.timonwa.com/how-to-build-a-random-color-flipper-with-vallina-javascript), and view the [code here](https://github.com/Timonwa/javascript-project-series/tree/main/02-color-flipper).
+
+### Image Slider
+
+You can view the [demo here](https://javascript-project-series.vercel.app/03-image-slider/index.html), read the [article here](https://blog.timonwa.com), and view the [code here](https://github.com/Timonwa/javascript-project-series/tree/main/03-image-slider).

@@ -91,10 +91,10 @@
             <li>
               <a href="../01-accordion/index.html">Accordions</a>
             </li>
-            <li class="active-link">
+            <li>
               <a href="../02-color-flipper/index.html">Color Flipper</a>
             </li>
-            <li>
+            <li class="active-link">
               <a href="../03-image-slider/index.html">Image Slider</a>
             </li>
           </ul>
@@ -106,39 +106,49 @@
       <!--* banner -->
       <header>
         <div class="page-header">
-          <h1>Color Flipper</h1>
-
-          <div class="page-links">
-            <span id="hex-page">HEX</span>
-            <span id="rgb-page">RGB</span>
-            <span id="hsl-page">HSL</span>
-          </div>
+          <h1>Image Slider</h1>
         </div>
       </header>
 
       <!--* body -->
       <main>
-        <div class="main-wrapper" id="hex-wrapper">
-          <p>Change the background color by clicking this button.</p>
-          <button id="hex-color">#babfff</button>
-        </div>
-
-        <div class="main-wrapper" id="rgb-wrapper">
-          <p>Change the background color by clicking this button.</p>
-          <button id="rgb-color">rgb(120, 191, 255)</button>
-        </div>
-
-        <div class="main-wrapper" id="hsl-wrapper">
-          <p>Change the background color by clicking this button.</p>
-          <button id="hsl-color">hsl(26, 100%, 86%)</button>
+        <div class="main-wrapper">
+          <!-- heading -->
+          <h3>Image Slider of Interior Decoration</h3>
+          <!-- slider cntr -->
+          <div class="slider">
+            <!-- image -->
+            <img
+              id="image"
+              src="./img/01-living-room-blue-theme.jpg"
+              alt=""
+              srcset=""
+            />
+            <!-- count and number of the images -->
+            <p>
+              <span id="image-number">1</span> of
+              <span id="total-image-number">4</span>
+            </p>
+            <!-- previous btn -->
+            <div class="btn" id="backward">
+              <span class="material-icons-outlined"> chevron_left </span>
+            </div>
+            <!-- next btn -->
+            <div class="btn" id="forward">
+              <span class="material-icons-outlined"> chevron_right </span>
+            </div>
+          </div>
         </div>
       </main>
 
       <footer>
         <div class="wrapper">
           <p class="attribution">
-            Created by <a href="https://github.com/timonwa" target="_blank">Timonwa</a> for
-            <a href="https://blog.timonwa.com" target="_blank">Timonwa's Blogs.</a>
+            Created by
+            <a href="https://github.com/timonwa" target="_blank">Timonwa</a> for
+            <a href="https://blog.timonwa.com" target="_blank"
+              >Timonwa's Blogs.</a
+            >
           </p>
         </div>
       </footer>
