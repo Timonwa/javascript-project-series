@@ -1,9 +1,12 @@
 // the variables of the image slider
-const image = document.getElementById("image");
-const imageNumber = document.getElementById("image-number");
-const totalImageNumber = document.getElementById("total-image-number");
-const prevBtn = document.getElementById("backward");
-const nextBtn = document.getElementById("forward");
+const image = document.querySelectorAll(".slide-image");
+const imageNumber = document.querySelectorAll(".slide-image-number");
+const totalImageNumber = document.querySelectorAll(".total-image-number");
+const prevBtn = document.querySelectorAll(".backward");
+const nextBtn = document.querySelectorAll(".forward");
+const modal = document.querySelector(".modal");
+const closeBtn = document.querySelector(".close-modal");
+
 // the image array
 const images = [
   "./img/01-living-room-blue-theme.jpg",
@@ -14,35 +17,55 @@ const images = [
 
 // the index of the image on page load
 let currentImage = 0;
-// the image details that shows when the webpage loads
-window.addEventListener("DOMContentLoaded", function () {
-  image.src = images[currentImage];
-  imageNumber.textContent = currentImage + 1;
-  totalImageNumber.textContent = images.length;
-});
+
 // function to select and change the image details
 function showImage() {
-  image.src = images[currentImage];
-  imageNumber.textContent = currentImage + 1;
-  totalImageNumber.textContent = images.length;
+  for (i of image) {
+    i.src = images[currentImage];
+    i.addEventListener("click", function () {
+      modal.style.display = "flex";
+    });
+  }
+
+  for (i of imageNumber) {
+    i.textContent = currentImage + 1;
+  }
+
+  for (i of totalImageNumber) {
+    i.textContent = images.length;
+  }
 }
 
+// the image details that shows when the webpage loads
+window.addEventListener("DOMContentLoaded", function () {
+  showImage();
+});
+
 // the next button function
-nextBtn.addEventListener("click", next);
-function next() {
-  currentImage++;
-  if (currentImage > images.length - 1) {
-    currentImage = 0;
+for (i of nextBtn) {
+  i.addEventListener("click", next);
+  function next() {
+    currentImage++;
+    if (currentImage > images.length - 1) {
+      currentImage = 0;
+    }
+    showImage(currentImage);
   }
-  showImage(currentImage);
 }
 
 // the prev button function
-prevBtn.addEventListener("click", prev);
-function prev() {
-  currentImage--;
-  if (currentImage < 0) {
-    currentImage = images.length - 1;
+for (i of prevBtn) {
+  i.addEventListener("click", prev);
+  function prev() {
+    currentImage--;
+    if (currentImage < 0) {
+      currentImage = images.length - 1;
+    }
+    showImage(currentImage);
   }
-  showImage(currentImage);
 }
+
+// close the modal
+closeBtn.addEventListener("click", function () {
+  modal.style.display = "none";
+});

@@ -2,7 +2,7 @@
 h3 {
   text-align: center;
 }
-
+/* slider container */
 .slider {
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -11,7 +11,7 @@ h3 {
   max-width: 700px;
 }
 /* image */
-#image {
+.slide-image {
   width: 100%;
   min-height: 200px;
   height: auto;
@@ -19,7 +19,7 @@ h3 {
   padding: 10px;
   margin: 0 auto;
 }
-/* count and number of the images */
+/* paragraph holding the count and number of the images */
 p {
   text-align: center;
 }
@@ -31,12 +31,33 @@ p {
   background-color: rgb(228, 231, 231);
   border: solid 1px rgb(201, 199, 199);
   padding: 5px;
+  cursor: pointer;
 }
 /* prev btn */
-#backward {
+.backward {
   left: 0px;
 }
 /* next btn */
-#forward {
+.forward {
   right: 0px;
+}
+/* modal */
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.649);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+/* close modal tn */
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
 }

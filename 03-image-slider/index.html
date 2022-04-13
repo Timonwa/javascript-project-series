@@ -7,13 +7,13 @@
     <!--* The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!--* Title -->
-    <title>Color Flipper | 10+ Vanilla Javascript Projects by Timonwa.</title>
+    <title>Image Slider | 10+ Vanilla Javascript Projects by Timonwa.</title>
 
     <!-- * SEO Meta Tags -->
     <!-- Primary Meta Tags -->
     <meta
       name="title"
-      content="Color Flipper | 10+ Vanilla Javascript Projects by Timonwa."
+      content="Image Slider | 10+ Vanilla Javascript Projects by Timonwa."
     />
     <meta
       name="description"
@@ -27,7 +27,7 @@
     />
     <meta
       property="og:title"
-      content="Color Flipper | 10+ Vanilla Javascript Projects by Timonwa."
+      content="Image Slider | 10+ Vanilla Javascript Projects by Timonwa."
     />
     <meta
       property="og:description"
@@ -45,7 +45,7 @@
     />
     <meta
       property="twitter:title"
-      content="Color Flipper | 10+ Vanilla Javascript Projects by Timonwa."
+      content="Image Slider | 10+ Vanilla Javascript Projects by Timonwa."
     />
     <meta
       property="twitter:description"
@@ -113,29 +113,49 @@
       <!--* body -->
       <main>
         <div class="main-wrapper">
-          <!-- heading -->
-          <h3>Image Slider of Interior Decoration</h3>
-          <!-- slider cntr -->
+          <!--* slider cntr -->
           <div class="slider">
             <!-- image -->
-            <img
-              id="image"
-              src="./img/01-living-room-blue-theme.jpg"
-              alt=""
-              srcset=""
-            />
-            <!-- count and number of the images -->
+            <img class="slide-image" src="" alt="" />
+            <!-- the count and number of the images -->
             <p>
-              <span id="image-number">1</span> of
-              <span id="total-image-number">4</span>
+              <span class="slide-image-number"></span> of
+              <span class="total-image-number"></span>
             </p>
             <!-- previous btn -->
-            <div class="btn" id="backward">
+            <div class="btn backward">
               <span class="material-icons-outlined"> chevron_left </span>
             </div>
             <!-- next btn -->
-            <div class="btn" id="forward">
+            <div class="btn forward">
               <span class="material-icons-outlined"> chevron_right </span>
+            </div>
+          </div>
+
+          <!--* modal -->
+          <div class="modal">
+            <span class="close-modal material-icons-outlined"> close </span>
+
+            <!-- modal content -->
+            <div class="modal-content">
+              <!--* slider cntr -->
+              <div class="slider">
+                <!-- image -->
+                <img class="slide-image" src="" alt="" />
+                <!-- the count and number of the images -->
+                <p>
+                  <span class="slide-image-number"></span> of
+                  <span class="total-image-number"></span>
+                </p>
+                <!-- previous btn -->
+                <div class="btn backward">
+                  <span class="material-icons-outlined"> chevron_left </span>
+                </div>
+                <!-- next btn -->
+                <div class="btn forward">
+                  <span class="material-icons-outlined"> chevron_right </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
