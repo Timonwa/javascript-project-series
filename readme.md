@@ -1,6 +1,6 @@
-# Javascript Projects Article series on Timonwa's Notes.
+# Javascript Projects Article series on Timonwa's Notes
 
-## 10+ mini projects to boost your Javascript skills.
+## 10+ mini projects to boost your Javascript skills
 
 ![Beginners Javascript Projects](https://github.com/Timonwa/javascript-project-series/blob/main/assets/seo-image.png)
 
