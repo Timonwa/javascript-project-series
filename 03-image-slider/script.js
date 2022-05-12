@@ -18,6 +18,11 @@ const images = [
 // the index of the image on page load
 let currentImage = 0;
 
+// the image details that shows when the webpage loads
+window.addEventListener("DOMContentLoaded", function () {
+  showImage();
+});
+
 // function to select and change the image details
 function showImage() {
   for (i of image) {
@@ -36,33 +41,26 @@ function showImage() {
   }
 }
 
-// the image details that shows when the webpage loads
-window.addEventListener("DOMContentLoaded", function () {
-  showImage();
-});
-
 // the next button function
 for (i of nextBtn) {
-  i.addEventListener("click", next);
-  function next() {
+  i.addEventListener("click", function () {
     currentImage++;
     if (currentImage > images.length - 1) {
       currentImage = 0;
     }
     showImage(currentImage);
-  }
+  });
 }
 
 // the prev button function
 for (i of prevBtn) {
-  i.addEventListener("click", prev);
-  function prev() {
+  i.addEventListener("click", function () {
     currentImage--;
     if (currentImage < 0) {
       currentImage = images.length - 1;
     }
     showImage(currentImage);
-  }
+  });
 }
 
 // close the modal

@@ -8,14 +8,14 @@ h3 {
   background-color: rgba(255, 255, 255, 0.2);
   position: relative;
   margin: 40px auto;
-  max-width: 700px;
+  max-width: 600px;
 }
 /* image */
 .slide-image {
   width: 100%;
   min-height: 200px;
   height: auto;
-  max-height: 450px;
+  max-height: 400px;
   padding: 10px;
   margin: 0 auto;
 }
@@ -62,12 +62,22 @@ p {
   right: 10px;
   background-color: #fff;
 }
-
+/* modal content */
+.modal-content {
+  width: 100vw;
+}
 /* slider inside the modal */
 .modal-content > .slider {
-  padding: 0px;
+  max-width: initial;
   background-color: transparent;
-  max-width: 1000px;
+}
+.modal-content > .slider > .slide-image {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  min-height: initial;
+  max-height: 500px;
+  height: auto;
 }
 /*  paragraph holding the count and number of the images in the slider */
 .modal-content p {
